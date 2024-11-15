@@ -1,0 +1,12 @@
+img {
+    height: 190px;
+    width: 180px;
+    object-fit: contain;
+    object-fit: scale-down;
+}
+h3{
+    background-color: bisque;
+    text-align: center;
+    padding: 30px;
+    font-size: 32px;
+}

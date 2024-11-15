@@ -1,0 +1,138 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(to right, #ff5f6d, #ffc371);
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* H1 Typewriter Animation */
+h1 {
+    margin: 0;
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    overflow: hidden; /* Hide overflow for animation */
+    border-right: 0.15em solid orange; /* Cursor effect */
+    white-space: nowrap; /* Keeps text in one line */
+    margin: 23% 30%;
+    animation: 
+        typing 4s steps(40, end), /* Typing animation */
+        blink-caret 0.55s step-end infinite, /* Blinking cursor */
+        hide-cursor 1s forwards 3s;/* Hides cursor after 5s */
+}
+    
+
+/* Typing Animation Keyframes */
+@keyframes typing {
+    from { width:0%; } /* Start with no width */
+    to { width: 40%; } /* Expand to full text width */
+}
+
+/* Blinking Cursor Animation */
+@keyframes blink-caret {
+    from, to { border-color: transparent; } /* Cursor invisible */
+    50% { border-color: orange; } /* Cursor visible at 50% */
+}
+@keyframes hide-cursor {
+    from { border-right-color: rgb(0, 255, 217); } /* Cursor visible */
+    to { border-right-color: transparent; } /* Cursor invisible */
+}
+/* Main Content Styles */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* service List Styles */
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    list-style-type: none;
+    padding-bottom: 100px;
+}
+
+/* Individual service Item Styles */
+.service-item {
+    background-color: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 1.5rem;
+    width: 300px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* service Poster Styles */
+.service-item img.service-poster {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* service Title Styles */
+.service-item h2 {
+    margin: 1rem 0;
+    font-size: 1.75rem;
+    color: #ff5f6d;
+}
+
+/* service Description Styles */
+.service-item p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* Download Button Styles */
+.download-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #ff5f6d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: #e94e58;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ff5f6d;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .service-item {
+        width: 100%;
+        margin: 1rem 0;
+    }
+}

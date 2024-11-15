@@ -1,0 +1,122 @@
+/* Index.css */
+
+
+#back-ground {
+  background-color: white;
+  
+  text-align: center;
+  background-size: cover;
+  background-position: center;  /* Center the image */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  width: 100%;
+  height: 100%;
+  
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #333; /* Dark background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar .logo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 100%;
+}
+
+.navbar .links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar .links li {
+  display: inline;
+}
+
+.navbar .links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar .links a:hover {
+  color: #ffeb3b; /* Highlight color on hover */
+}
+
+.navbar-buttons {
+  display: flex;
+  margin-right: 100px;
+  gap: 10px;
+}
+
+.login-btn, .signup-btn {
+  padding: 5px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px; /* Rounded corners */
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.login-btn {
+  background: rgb(1, 255, 39);
+  color: black;
+}
+
+.signup-btn {
+  background-color: aqua;
+  padding: 5px 20px;
+  color: black;
+}
+
+.login-btn:hover, .signup-btn:hover {
+  opacity: 0.8;
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+#hero {
+  text-align: center;
+  padding: 100px 200px; /* Add padding to make space for the fixed navbar */
+  color: #333;
+  margin-top: 20px;
+ 
+  
+}
+
+.welcome-text {
+  font-size: 30px;
+  margin: 0;
+}
+
+.fn {
+  font-size: 48px;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #f70d0dab;
+}
+
+.fof {
+  font-size: 36px;
+  color: #555;
+}
+.main{
+  width: 100%;
+  height: 100%;
+}
+.bc
+{
+    background-image: url("agriimage1.jpeg");
+
+}

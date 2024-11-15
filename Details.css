@@ -1,0 +1,68 @@
+/* Details.css */
+
+/* Background styling for the entire page */
+.details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    padding: 20px;
+    
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Product card styling */
+  .product-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Product name styling */
+  .product-name {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  
+  /* Image styling */
+  .product-image {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    transition: transform 0.3s;
+    padding: 50px;
+  }
+  
+  .product-image:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Product information styling */
+  .product-info p {
+    margin: 8px 0;
+    font-size: 1rem;
+    color: #555;
+    padding: 7px;
+  }
+  
+  /* Description styling */
+  .description {
+    font-style: italic;
+    color: #777;
+  }
+  
+  /* Hover effect for card */
+  .product-card:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+  }
+  
